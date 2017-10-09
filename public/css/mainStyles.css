@@ -1,0 +1,143 @@
+body {
+    height: 100vh;
+    font-family: 'Helvetica', sans-serif;
+    /*background-color: #fdf7ef;
+    background: #322f30;*/
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    position: relative
+}
+.main {
+  min-height: 100%;
+  margin-bottom: -119px;
+  width: 100%;
+  background-color: #ededed;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#push {
+  height: 119px;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 100;
+  list-style-type: none;
+}
+a {
+    text-decoration: none;
+    font-family: 'Cookie', cursive;
+    font-size: 28px;
+    color: black;
+}
+footer ul {
+  font-size: 24px;
+  color: #969696;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin:  1% 0 1% 0;
+}
+.footerHeader {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+ul {
+    padding:0;
+    list-style: none;
+}
+.footer-social-icons {
+    width: 250px;
+    display:block;
+    margin: 0 auto;
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-instagram {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-instagram:hover {
+    background-color: #2C6A93;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 7px;
+  background-color: #ededed;
+  text-align: center;
+}
+#overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .8);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 75px;
+  width: 120px;
+}

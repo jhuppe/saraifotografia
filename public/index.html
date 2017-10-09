@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="photoCollection">
+  <head>
+
+
+    <link rel="stylesheet" href="css/mainStyles.css">
+    <link rel="stylesheet" href="css/adminStyles.css">
+    <link rel="stylesheet" href="css/galeriaStyles.css">
+    <link rel="stylesheet" href="css/biografiaStyles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+   <div class="main">
+     <header>
+            <nav>
+                <ul>
+                    <li><a ui-sref="galeria"> <img class="logo" src="images/sarai_logo.img" alt="Sarai Fotos Logo"></a></li>
+                    <li><a ui-sref="biografia">Biografia</a></li>
+                    <li><a ui-sref="precios">Precios</a></li>
+
+                </ul>
+            </nav>
+    </header>
+    <ui-view></ui-view>
+
+    <div id="push"></div>
+    <footer>
+      <div class="footer-social-icons">
+        <h4 class="footerHeader">Seguime en:</h4>
+          <ul class="social-icons">
+            <li><a href="" class="social-icon"> <i class="fa fa-facebook" target="_blank"></i></a></li>
+            <li><a href="https://www.instagram.com/saraiaguirrefotografia" class="social-icon" target="_blank"> <i class="fa fa-instagram"></i></a></li>
+            <li><a href="" class="social-icon"> <i class="fa fa-twitter" target="_blank"></i></a></li>
+          </ul>
+      </div>
+    </footer>
+
+   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+  <script src="app.js"></script>
+  <script src="./controllers/packagesCtrl.js"></script>
+  <script src="./controllers/galleryCtrl.js"></script>
+  <script src="./controllers/adminCtrl.js"></script>
+  <script src="./services/packagesService.js"></script>
+  <script src="./services/galleryService.js"></script>
+  <script src="./services/adminService.js"></script>
+  <script src="./directives/photoModal.js"></script>
+
+
+  </body>
+</html>

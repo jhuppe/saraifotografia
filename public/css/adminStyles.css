@@ -1,0 +1,32 @@
+.packages-container {
+  padding: 40px;
+  background: #ededed;
+}
+
+.package {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px solid black;
+  margin: 5px;
+  padding: 20px;
+}
+
+.package-info {
+}
+
+.package-actions {
+  display: flex;
+  margin-left: 20px;
+}
+
+.package-actions i {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.newPhotos {
+  padding: 40px;
+  border: 20px 50px;
+}

@@ -1,0 +1,25 @@
+<section>
+  <photo-modal ng-show="showModal" image="image" toggle="toggleModal()">
+  </photo-modal>
+  <div>
+    <ul class="filters">
+      <li><button ng-click="filter.tag = 'edificios'">Edificios</button></li>
+      <li><button ng-click="filter.tag = 'faunayflora'">Fauna y Flora</button></li>
+      <li><button ng-click="filter.tag = 'paisaje'">Paisaje</button></li>
+      <li><button ng-click="filter.tag = ''">Todos</button></li>
+    </ul>
+  </div>
+  <div class="gallery-container">
+    <div
+      class="photo"
+      ng-repeat="photo in photos | filter: filter"
+      ng-click="displayModal(photo.img_url)"
+      >
+      <div class="photo" ng-style="{'background-image': 'url({{photo.img_url}})'}" ></div>
+        <!-- <div class="photo" ng-style={background: url({{photo.img_url}})} ng-click="displayModal(photo.img_url)"></div> -->
+        <!-- <img ng-src="{{photo.img_url}}" alt="An image should be here" ng-click="displayModal(photo.img_url)"> -->
+    </div>
+
+  </div>
+
+</section>

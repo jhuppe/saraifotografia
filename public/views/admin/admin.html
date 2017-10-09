@@ -1,0 +1,42 @@
+<section class="admin-portal">
+    <div class="header">
+        <h1>Manage Displayed Packages and Photos</h1>
+        <p>Maecenas rhoncus elit et mattis placerat. In aliquam eu velit gravida vulputate. Cras facilisis augue quis velit ultrices luctus. Duis eu turpis massa. Morbi iaculis porttitor feugiat. Suspendisse sit amet metus vulputate, fermentum sapien et, mollis massa. Quisque condimentum nunc vel nisl pellentesque, nec dapibus urna pulvinar. Nulla ac nisl arcu. Integer tincidunt mauris sed libero malesuada consequat. Vestibulum sodales lacus ornare, lobortis metus quis, laoreet eros. Duis tristique ligula sit amet malesuada accumsan. Nunc et metus maximus, faucibus magna quis, accumsan arcu. Nullam eleifend pretium vestibulum. Suspendisse nec diam lacus. Aliquam consequat tincidunt risus, et rutrum risus vehicula at.</p>
+    </section>
+
+    <div class="packages-container">
+      <div class="package" ng-repeat="package in packages">
+        <div class="package-info" ng-show="!package.edit">
+          <h3>{{package.name}}</h3>
+          <p>${{package.price}}</p>
+          <p>{{package.description}}</p>
+        </div>
+        <div class="package-info" ng-show="package.edit">
+          <h3>Package Name:</h3><input type="text" ng-model="package.name">
+          <p>Price:</p> <input type="text" ng-model="package.price">
+          <p>Description:</p><textarea type="text" ng-model="package.description"></textarea>
+        </div>
+        <div class="package-actions" ng-show="!package.edit">
+          <i class="fa fa-pencil fa-lg" ng-click="package.edit=!package.edit"></i>
+          <i class="fa fa-trash fa-lg"></i>
+        </div>
+        <div class="package-actions" ng-show="package.edit">
+          <button ng-click="updatePackage(package)">save</button>
+          <button ng-click="package.edit=!package.edit">cancel</button>
+        </div>
+       </div>
+      </div>
+      <div class="new-image-container">
+        <div class="newPhotos">
+        <h2> Agregar Foto </h2>
+          <form>
+            Url de Imagen: <input type="text" name="image" ng-model="photo.img_url"><br>
+            Etiqueta de Imagen: <input type="text" name="tag" ng-model="photo.tag"><br>
+            Descripción: <input type="text" name="description" ng-model="photo.description">
+            <button ng-click="addPhoto(photo)">Enviar</button>
+          </form>
+
+        </div>
+      </div>
+
+</section>

@@ -1,0 +1,37 @@
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.filters li {
+  height: 100px;
+  width: 190px;
+}
+.photo {
+  width: 300px;
+  height: 300px;
+  margin: 6px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.filters {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+#overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .8);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#modal-image {
+  width: 800px;
+  z-index: 100;
+}
